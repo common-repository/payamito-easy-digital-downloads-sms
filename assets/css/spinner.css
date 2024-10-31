@@ -1,0 +1,223 @@
+.edd_payamito-dispaly {
+    display: none !important;
+}
+
+.edd_payamito_container:not(body),
+body.edd_payamito_container .edd_payamito {
+    transform: translateZ(0);
+    backface-visibility: hidden
+}
+
+body.edd_payamito_container .edd_payamito {
+    position: fixed;
+    height: 100vh
+}
+
+body.edd_payamito_container .edd_payamito .edd_payamito_content {
+    top: 50% !important;
+    transform: none !important
+}
+
+.edd_payamito_container .edd_payamito {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999;
+    text-align: center;
+    overflow: hidden;
+    cursor: wait
+}
+
+.edd_payamito_container .edd_payamito * {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: initial;
+    font-style: initial;
+    line-height: initial;
+    color: initial;
+    text-decoration: initial;
+    text-transform: initial;
+    padding: initial;
+    margin: initial
+}
+
+.edd_payamito_container .edd_payamito .edd_payamito_content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    backface-visibility: hidden
+}
+
+.edd_payamito_container .edd_payamito .edd_payamito_progress {
+    position: relative;
+    font-size: 0;
+    line-height: 0
+}
+
+body.edd_payamito_body {
+    overflow: hidden;
+    height: 100%
+}
+
+body.edd_payamito_body.hideMe {
+    transition: opacity .2s ease-in-out;
+    opacity: 0
+}
+
+body.edd_payamito_body .edd_payamito_container:not([data-edd_payamito_id]) {
+    position: fixed;
+    z-index: 9989;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff
+}
+
+body.edd_payamito_body .edd_payamito_container:not([data-edd_payamito_id]) > div {
+    animation-fill-mode: both;
+    position: absolute
+}
+
+body.edd_payamito_body .edd_payamito_container.progress > div {
+    width: 0;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background: #cd2653;
+    box-shadow: -5px 0 5px 2px rgba(0, 0, 0, .2);
+    animation: progress_body 7s infinite ease-out
+}
+
+body.edd_payamito_body .edd_payamito_container.working > div {
+    width: 1%;
+    height: 3px;
+    top: 0;
+    left: -10%;
+    background: #cd2653;
+    box-shadow: -5px 0 5px 2px rgba(0, 0, 0, .2);
+    animation: working_body 2s infinite linear
+}
+
+body.edd_payamito_body .edd_payamito_container.progress > div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 60%;
+    right: 0;
+    width: 60px;
+    border-radius: 50%;
+    opacity: .5;
+    transform: rotate(3deg);
+    box-shadow: #cd2653 1px 0 6px 1px
+}
+
+body.edd_payamito_body .edd_payamito_container.img > div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-position: center !important;
+    background-repeat: no-repeat !important
+}
+
+body.edd_payamito_body .edd_payamito_container.text > div {
+    width: 100%;
+    top: 45%;
+    text-align: center
+}
+
+@keyframes progress_body {
+    0% {
+        width: 0
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes working_body {
+    0% {
+        left: -10%
+    }
+    100% {
+        left: 100%
+    }
+}
+
+.edd_payamito_container .edd_payamito_progress.win8 {
+    width: 100px;
+    height: 100px;
+    margin: auto
+}
+
+.edd_payamito_container .edd_payamito_progress.win8 > div {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    transform: rotate(225deg);
+    animation: win8 5.5s infinite
+}
+
+.edd_payamito_container .edd_payamito_progress.win8 > div > div {
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    position: absolute
+}
+
+.edd_payamito_container .edd_payamito_progress.win8 .edd_payamito_progress_elem2 {
+    animation-delay: .24s;
+}
+
+.edd_payamito_container .edd_payamito_progress.win8 .edd_payamito_progress_elem3 {
+    animation-delay: .48s
+}
+
+.edd_payamito_container .edd_payamito_progress.win8 .edd_payamito_progress_elem4 {
+    animation-delay: .72s
+}
+
+.edd_payamito_container .edd_payamito_progress.win8 .edd_payamito_progress_elem5 {
+    animation-delay: .96s
+}
+
+@keyframes win8 {
+    0% {
+        transform: rotate(225deg);
+        animation-timing-function: ease-out
+    }
+    7% {
+        opacity: 1;
+        transform: rotate(345deg);
+        animation-timing-function: linear
+    }
+    30% {
+        transform: rotate(455deg);
+        animation-timing-function: ease-in-out
+    }
+    39% {
+        transform: rotate(690deg);
+        animation-timing-function: linear
+    }
+    70% {
+        opacity: 1;
+        transform: rotate(815deg);
+        animation-timing-function: ease-out
+    }
+    75% {
+        transform: rotate(945deg);
+        animation-timing-function: ease-out
+    }
+    100%,
+    76% {
+        opacity: 0;
+        transform: rotate(945deg)
+    }
+}

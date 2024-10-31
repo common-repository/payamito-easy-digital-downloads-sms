@@ -1,0 +1,14 @@
+.edd_payamito-error-field {
+    background-color: #ffb7ca !important;
+    border: 2px solid red !important;
+}
+
+.edd_payamito-send-otp {
+    padding: 18px !important;
+    width: 20% !important;
+    text-align: center !important;
+    font-size: 20px !important;
+    color: white !important;
+    background-color: #409beb !important;
+    cursor: pointer !important
+}

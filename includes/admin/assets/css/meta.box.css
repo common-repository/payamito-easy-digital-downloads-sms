@@ -1,0 +1,55 @@
+.payamito-user-photo {
+    text-align: center;
+}
+
+.payamito-user-photo img {
+    border: 1px solid #eee;
+    content: "";
+    display: table;
+    clear: both;
+    margin: auto;
+    width: 50%;
+    border: 1px solid #ddd;
+}
+
+.-group:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: auto;
+    width: 50%;
+}
+
+.payamitoasw4 {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.payamitoaswul {
+    margin-bottom: 22px;
+}
+
+.payamito-name {
+    font-size: 16px;
+    text-align: center;
+}
+
+.payamito-order-details {
+    text-align: center;
+    border: 1px solid green;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.payamito-order-details-error {
+    text-align: center;
+    border: 1px solid red;
+    background-color: rgb(245, 231, 231);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+}

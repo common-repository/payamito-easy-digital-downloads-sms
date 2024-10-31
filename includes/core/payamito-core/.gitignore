@@ -1,0 +1,22 @@
+# CMake
+cmake-build-*/
+
+# File-based project format
+*.iws
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Mac
+.DS_Store
+
+# VSCode
+.vscode/
+.history/
+.ionide/
+*.vsix
+
+# Jetbrains
+out/
+.idea/
+.idea_modules/
